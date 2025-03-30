@@ -29,7 +29,8 @@ export class MemStorage implements IStorage {
 
   async createRsvp(insertRsvp: InsertRsvp): Promise<Rsvp> {
     const id = this.currentId++;
-    const rsvp: Rsvp = { ...insertRsvp, id };
+    const createdAt = new Date();
+    const rsvp: Rsvp = { ...insertRsvp, id, createdAt };
     this.rsvps.set(id, rsvp);
     return rsvp;
   }

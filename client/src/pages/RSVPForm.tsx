@@ -63,7 +63,7 @@ export default function RSVPForm() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4 pt-20">
       <Card className="w-full max-w-md shadow-md overflow-hidden">
         <CardHeader className="bg-primary text-primary-foreground">
           <CardTitle className="text-2xl font-bold text-center">PMP/CAPM Review RSVP</CardTitle>
